@@ -1,0 +1,30 @@
+<br />
+<h2>Listar Pokemons</h2>
+<br />
+
+<ol>
+  @for (pokemon of pokemons; track $index){
+  <li>
+    <div
+      style="
+        background-color: lightcyan;
+        width: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div>
+        <img [src]="pokemon.urlImagem" alt="{{ pokemon.nome }}" />
+      </div>
+      ID: {{ pokemon.id }} <br />
+      Nome: {{ pokemon.nome }} <br />
+      Força: {{ pokemon.forca }} <br />
+      Agilidade: {{ pokemon.agilidade }} <br />
+      Lealdade: {{ pokemon.lealdade }}
+    </div>
+    <br />
+    <br />
+  </li>
+  }
+</ol>

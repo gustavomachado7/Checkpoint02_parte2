@@ -1,0 +1,25 @@
+<br />
+<h2 class="container">Tabela IBGE</h2>
+<br />
+<table class="container table table-bordered text-center ">
+  <thead>
+    <tr>
+      <th>Id do Estado</th>
+      <th>Sigla do Estado</th>
+      <th>Nome do Estado</th>
+      <!-- <th>Id da Região</th>
+      <th>Sigla da Região</th>
+      <th>Nome da Região</th> -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let estado of estados">
+      <td>{{ estado.id }}</td>
+      <td>{{ estado.sigla }}</td>
+      <td>{{ estado.nome }}</td>
+      <!-- <td>{{ estado.regiao.id }}</td>
+      <td>{{ estado.regiao.sigla }}</td>
+      <td>{{ estado.regiao.nome }}</td> -->
+    </tr>
+  </tbody>
+</table>
